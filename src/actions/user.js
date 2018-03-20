@@ -21,7 +21,7 @@ export function loadUsers(){
   return dispatch => {
     return axios({
         method: 'GET',
-        url:'http://localhost:8080/demo/all',
+        url:'http://localhost:8000/demo/all',
         headers:{
           'Authorization': 'Basic QWRtaW46MTIzNDU='
         }
@@ -39,7 +39,7 @@ export function saveUser(user){
   return dispatch => {
     return axios({
       method: 'GET',
-      url:`http://localhost:8080/demo/add?name=${user[0].name}&age=${user[0].age}&location=${user[0].location}&dob=${user[0].dob.toString()}`,
+      url:`http://localhost:8000/demo/add?name=${user[0].name}&age=${user[0].age}&location=${user[0].location}&dob=${user[0].dob.toString()}`,
       headers:{
         'Authorization': 'Basic QWRtaW46MTIzNDU='
       }
@@ -54,7 +54,7 @@ export function updateUser(user){
   return dispatch => {
     return axios({
       method: 'GET',
-      url:`http://localhost:8080/demo/edit/${user.name}?age=${user.age}&location=${user.location}&dob=${user.dob.toString()}`,
+      url:`http://localhost:8000/demo/edit/${user.name}?age=${user.age}&location=${user.location}&dob=${user.dob.toString()}`,
       headers:{
         'Authorization': 'Basic QWRtaW46MTIzNDU='
       }
@@ -69,7 +69,7 @@ export function deleteUser(user){
   return dispatch => {
     return axios({
       method: 'GET',
-      url:`http://localhost:8080/demo/delete/${user.name}`,
+      url:`http://localhost:8000/demo/delete/${user.name}`,
       headers:{
         'Authorization': 'Basic QWRtaW46MTIzNDU='
       }
