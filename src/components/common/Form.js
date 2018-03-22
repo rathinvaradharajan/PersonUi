@@ -54,7 +54,7 @@ class Form extends React.Component {
           <tr><td>DOB : </td><td><InputField value={dob} fieldType="date" fieldName="dob" onChange={this.handleChange}/></td></tr>
         </tbody>
       </table>
-      <button className="btn btn-primary" onClick={this.handleSubmit}>Submit</button>
+      <button className="btn btn-primary" onClick={this.handleSubmit} id="submitButton">Submit</button>
       &nbsp;<Link to={'/users'}>Profiles</Link>
     </div>
     );

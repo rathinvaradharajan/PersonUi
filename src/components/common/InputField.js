@@ -11,7 +11,7 @@ class InputField extends React.Component{
   }
   render() {
     return (
-      <input type={this.props.fieldType} onChange={this.handleChange} value={this.props.value} disabled={this.props.namedisabled}/>
+      <input type={this.props.fieldType} onChange={this.handleChange} value={this.props.value} disabled={this.props.namedisabled} id={this.props.fieldName}/>
     );
   }
 }

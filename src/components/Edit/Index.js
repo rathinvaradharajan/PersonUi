@@ -32,7 +32,7 @@ class Index extends React.Component {
         <Form onClick={this.handleClick} user={this.state.user} nameDisabled="disabled"/>
         <div>
           <br /><br />
-          <button className="btn btn-sm btn-block btn-danger" onClick={this.handleDelete}>Delete this User</button>
+          <button className="btn btn-sm btn-block btn-danger" onClick={this.handleDelete} id="deleteButton">Delete this User</button>
         </div>
       </div>
     );

@@ -6,7 +6,7 @@ class Users extends React.Component{
   constructor(props) {
     super(props);
   }
-  
+
   redirectToProfile() {
     browserHistory.push('/');
   }
@@ -18,7 +18,7 @@ class Users extends React.Component{
         {this.props.users.map((user) => {
           return <User key={user.name} user={user} click={this.props.click}/>})
         }
-        <button className="btn btn-primary" onClick={this.redirectToProfile}>Back</button>
+        <button className="btn btn-primary" onClick={this.redirectToProfile} id="backButton">Back</button>
       </div>
     );
   }

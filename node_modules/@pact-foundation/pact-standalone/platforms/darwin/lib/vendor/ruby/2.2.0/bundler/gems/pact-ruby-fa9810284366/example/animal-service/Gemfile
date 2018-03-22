@@ -1,0 +1,14 @@
+source 'https://rubygems.org'
+
+group :development, :test do
+  gem 'rspec'
+  gem 'pact', path: '../../'
+  gem 'pry'
+end
+
+gem 'rake'
+gem 'rack', '~> 2.0'
+gem 'json', '~>1.8'
+gem 'sqlite3'
+gem 'sequel'
+gem 'sinatra'
