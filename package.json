@@ -5,6 +5,7 @@
   "scripts": {
     "prestart": "babel-node tools/startMessage.js",
     "start": "babel-node tools/srcServer.js",
+    "stop": "pkill --signal SIGINT tools/srcServer.js",
     "e2e-setup": "selenium-standalone install",
     "test:e2e": "nightwatch -e default,chrome"
   },
