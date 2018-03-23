@@ -1,6 +1,26 @@
 [
   {
     "keyword": "Feature",
+    "name": "Empty Form Submit",
+    "line": 1,
+    "id": "empty-form-submit",
+    "tags": [],
+    "uri": "test/features/EmptyFormSubmit.feature",
+    "elements": [
+      {
+        "description": "Given: I submit a empty new user form\n\nThen: It stays in the \"New User\" page\n\nThen: Toastr appears",
+        "id": "empty-form-submit;the-submitting-of-a-empty-form-fails",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "The Submitting of a Empty form fails",
+        "tags": [],
+        "type": "scenario",
+        "steps": []
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
     "name": "New User Page",
     "line": 1,
     "id": "new-user-page",

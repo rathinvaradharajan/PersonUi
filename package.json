@@ -5,7 +5,6 @@
   "scripts": {
     "prestart": "babel-node tools/startMessage.js",
     "start": "babel-node tools/srcServer.js",
-    "pretest:e2e": "npm run e2e-setup",
     "e2e-setup": "selenium-standalone install",
     "test:e2e": "nightwatch -c nightwatch.config.js"
   },
