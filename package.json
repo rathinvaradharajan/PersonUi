@@ -6,7 +6,8 @@
     "prestart": "babel-node tools/startMessage.js",
     "start": "babel-node tools/srcServer.js",
     "e2e-setup": "selenium-standalone install",
-    "test:e2e": "nightwatch -c nightwatch.config.js"
+    "test:e2e": "nightwatch -c nightwatch.config.js",
+    "posttest:e2e":"node ./reports/CucumberHtmlReporter/Index.js"
   },
   "author": "Rathin",
   "license": "MIT",
