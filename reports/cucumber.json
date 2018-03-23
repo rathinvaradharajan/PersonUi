@@ -1,0 +1,42 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "New User Page",
+    "line": 1,
+    "id": "new-user-page",
+    "tags": [],
+    "uri": "test/features/NewUserPage.feature",
+    "elements": [
+      {
+        "description": "Given: I open http://localhost:4000\nThen: \"New User\" title appears\nAnd: The Input form for the details exists",
+        "id": "new-user-page;verify-if-the-new-user-page-is-opened-on-start.",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Verify if the new user page is opened on start.",
+        "tags": [],
+        "type": "scenario",
+        "steps": []
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Display Page",
+    "line": 1,
+    "id": "display-page",
+    "tags": [],
+    "uri": "test/features/display.feature",
+    "elements": [
+      {
+        "description": "Given: I click profiles in http://localhost:4000\nThen: \"Profiles\" title appears\nAnd: \"Edit User\" title appears\nAnd: \"Delete this User\" button appears",
+        "id": "display-page;verify-if-the-users-are-displayed.",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Verify if the users are displayed.",
+        "tags": [],
+        "type": "scenario",
+        "steps": []
+      }
+    ]
+  }
+]

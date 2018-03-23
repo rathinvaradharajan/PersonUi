@@ -5,9 +5,9 @@
   "scripts": {
     "prestart": "babel-node tools/startMessage.js",
     "start": "babel-node tools/srcServer.js",
-    "stop": "pkill --signal SIGINT tools/srcServer.js",
+    "pretest:e2e": "npm run e2e-setup",
     "e2e-setup": "selenium-standalone install",
-    "test:e2e": "nightwatch -e default,chrome"
+    "test:e2e": "nightwatch -c nightwatch.config.js"
   },
   "author": "Rathin",
   "license": "MIT",
@@ -19,7 +19,6 @@
     "cucumber": "^4.0.0",
     "cucumber-pretty": "^1.4.1",
     "jquery": "3.0.0",
-    "nightwatch-cucumber": "^9.1.2",
     "react": "15.0.2",
     "react-dom": "15.0.2",
     "react-redux": "4.4.5",
@@ -61,6 +60,7 @@
     "jsdom": "8.5.0",
     "mocha": "^2.4.5",
     "nightwatch": "^0.9.20",
+    "nightwatch-cucumber": "^9.1.2",
     "nock": "8.0.0",
     "npm-run-all": "1.8.0",
     "open": "0.0.5",
