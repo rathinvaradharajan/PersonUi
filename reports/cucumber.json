@@ -1,6 +1,26 @@
 [
   {
     "keyword": "Feature",
+    "name": "Empty User Form delete",
+    "line": 1,
+    "id": "empty-user-form-delete",
+    "tags": [],
+    "uri": "test/features/DeleteEmptyUser.feature",
+    "elements": [
+      {
+        "description": "Given: I press the delete button with empty  user form\n\nThen: It stays in the \"Profiles\" page",
+        "id": "empty-user-form-delete;the-deleting-of-a-empty-form-fails",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "The Deleting of a Empty form fails",
+        "tags": [],
+        "type": "scenario",
+        "steps": []
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
     "name": "Empty Form Submit",
     "line": 1,
     "id": "empty-form-submit",
