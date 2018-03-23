@@ -275,7 +275,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Fri Mar 23 2018 03:18:19 GMT-0700 (PDT)</div>
+      <div class="generated-on">Fri Mar 23 2018 03:46:28 GMT-0700 (PDT)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -364,7 +364,7 @@ pre {
                     <a data-toggle="collapse" href="#collapseFeature_rofiles0">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
-                        <b>Feature:</b>Empty User Form delete
+                        <b>Feature:</b>New User Page
                         <span class="label-container">
               
               
@@ -391,7 +391,7 @@ pre {
                                         <div style="padding-right: 10px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>The Deleting of a Empty form fails
+                                            <b>Scenario:</b>Verify if the new user page is opened on start.
                                         </div>
                                         <div>
                             <span class="label-container">
@@ -409,7 +409,42 @@ pre {
                         </div>
                         <div id="collapseScenario_rofiles0_0" class="panel-collapse collapse">
                             <div class="panel-body">
-                                <div class="description" id="scenario-description">Given: I press the delete button with empty  user form<br /><br />Then: It stays in the "Profiles" page</div>
+                                <div class="description" id="scenario-description">Given: I open http://localhost:4000<br />Then: "New User" title appears<br />And: The Input form for the details exists</div>
+                                
+                        </div>
+                    </div>
+                </div>
+                
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                <div class="tags"> </div>
+                                <a data-toggle="collapse" href="#collapseScenario_rofiles0_1">
+                                    <div>
+
+                                        <div style="padding-right: 10px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>The Submitting of a Empty form fails
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenario_rofiles0_1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="description" id="scenario-description">Given: I submit a empty new user form<br />Then: It stays in the "New User" page<br />Then: Toastr appears</div>
                                 
                         </div>
                     </div>
@@ -430,7 +465,7 @@ pre {
                     <a data-toggle="collapse" href="#collapseFeature_rofiles1">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
-                        <b>Feature:</b>Empty Form Submit
+                        <b>Feature:</b>Display Page
                         <span class="label-container">
               
               
@@ -457,7 +492,7 @@ pre {
                                         <div style="padding-right: 10px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>The Submitting of a Empty form fails
+                                            <b>Scenario:</b>Verify if the users are displayed.
                                         </div>
                                         <div>
                             <span class="label-container">
@@ -475,143 +510,42 @@ pre {
                         </div>
                         <div id="collapseScenario_rofiles1_0" class="panel-collapse collapse">
                             <div class="panel-body">
-                                <div class="description" id="scenario-description">Given: I submit a empty new user form<br /><br />Then: It stays in the "New User" page<br /><br />Then: Toastr appears</div>
-                                
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-</div>
-
-
-
-<div class="row">
-    
-    <div class="col-lg-6 col-md-6">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <div class="tags"> </div>
-                    <a data-toggle="collapse" href="#collapseFeature_rofiles2">
-                        <i class="glyphicon glyphicon-chevron-right"></i>
-                        <i class="glyphicon glyphicon-chevron-down"></i>
-                        <b>Feature:</b>New User Page
-                        <span class="label-container">
-              
-              
-              
-              
-              
-              
-            </span>
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseFeature_rofiles2" class="panel-collapse collapse">
-                <div class="panel-body">
-                    
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                <div class="tags"> </div>
-                                <a data-toggle="collapse" href="#collapseScenario_rofiles2_0">
-                                    <div>
-
-                                        <div style="padding-right: 10px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Verify if the new user page is opened on start.
-                                        </div>
-                                        <div>
-                            <span class="label-container">
-                              
-                              
-                              
-                              
-                              
-                              
-                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenario_rofiles2_0" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <div class="description" id="scenario-description">Given: I open http://localhost:4000<br />Then: "New User" title appears<br />And: The Input form for the details exists</div>
-                                
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-    <div class="col-lg-6 col-md-6">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <div class="tags"> </div>
-                    <a data-toggle="collapse" href="#collapseFeature_rofiles3">
-                        <i class="glyphicon glyphicon-chevron-right"></i>
-                        <i class="glyphicon glyphicon-chevron-down"></i>
-                        <b>Feature:</b>Display Page
-                        <span class="label-container">
-              
-              
-              
-              
-              
-              
-            </span>
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseFeature_rofiles3" class="panel-collapse collapse">
-                <div class="panel-body">
-                    
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                <div class="tags"> </div>
-                                <a data-toggle="collapse" href="#collapseScenario_rofiles3_0">
-                                    <div>
-
-                                        <div style="padding-right: 10px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Verify if the users are displayed.
-                                        </div>
-                                        <div>
-                            <span class="label-container">
-                              
-                              
-                              
-                              
-                              
-                              
-                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenario_rofiles3_0" class="panel-collapse collapse">
-                            <div class="panel-body">
                                 <div class="description" id="scenario-description">Given: I click profiles in http://localhost:4000<br />Then: "Profiles" title appears<br />And: "Edit User" title appears<br />And: "Delete this User" button appears</div>
+                                
+                        </div>
+                    </div>
+                </div>
+                
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                <div class="tags"> </div>
+                                <a data-toggle="collapse" href="#collapseScenario_rofiles1_1">
+                                    <div>
+
+                                        <div style="padding-right: 10px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>The Deleting of a Empty form fails
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenario_rofiles1_1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="description" id="scenario-description">Given: I press the delete button with empty  user form<br />Then: It stays in the "Profiles" page</div>
                                 
                         </div>
                     </div>
@@ -650,7 +584,7 @@ pre {
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Features",
                                                             "failed" : 0,
-                                                            "passed" : 4,
+                                                            "passed" : 2,
                                                             "ambiguous" : 0
                                                         })
                                             });

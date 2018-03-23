@@ -1,46 +1,6 @@
 [
   {
     "keyword": "Feature",
-    "name": "Empty User Form delete",
-    "line": 1,
-    "id": "empty-user-form-delete",
-    "tags": [],
-    "uri": "test/features/DeleteEmptyUser.feature",
-    "elements": [
-      {
-        "description": "Given: I press the delete button with empty  user form\n\nThen: It stays in the \"Profiles\" page",
-        "id": "empty-user-form-delete;the-deleting-of-a-empty-form-fails",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "The Deleting of a Empty form fails",
-        "tags": [],
-        "type": "scenario",
-        "steps": []
-      }
-    ]
-  },
-  {
-    "keyword": "Feature",
-    "name": "Empty Form Submit",
-    "line": 1,
-    "id": "empty-form-submit",
-    "tags": [],
-    "uri": "test/features/EmptyFormSubmit.feature",
-    "elements": [
-      {
-        "description": "Given: I submit a empty new user form\n\nThen: It stays in the \"New User\" page\n\nThen: Toastr appears",
-        "id": "empty-form-submit;the-submitting-of-a-empty-form-fails",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "The Submitting of a Empty form fails",
-        "tags": [],
-        "type": "scenario",
-        "steps": []
-      }
-    ]
-  },
-  {
-    "keyword": "Feature",
     "name": "New User Page",
     "line": 1,
     "id": "new-user-page",
@@ -53,6 +13,16 @@
         "keyword": "Scenario",
         "line": 3,
         "name": "Verify if the new user page is opened on start.",
+        "tags": [],
+        "type": "scenario",
+        "steps": []
+      },
+      {
+        "description": "Given: I submit a empty new user form\nThen: It stays in the \"New User\" page\nThen: Toastr appears",
+        "id": "new-user-page;the-submitting-of-a-empty-form-fails",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "The Submitting of a Empty form fails",
         "tags": [],
         "type": "scenario",
         "steps": []
@@ -73,6 +43,16 @@
         "keyword": "Scenario",
         "line": 3,
         "name": "Verify if the users are displayed.",
+        "tags": [],
+        "type": "scenario",
+        "steps": []
+      },
+      {
+        "description": "Given: I press the delete button with empty  user form\nThen: It stays in the \"Profiles\" page",
+        "id": "display-page;the-deleting-of-a-empty-form-fails",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "The Deleting of a Empty form fails",
         "tags": [],
         "type": "scenario",
         "steps": []
