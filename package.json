@@ -7,7 +7,8 @@
     "start": "babel-node tools/srcServer.js",
     "e2e-setup": "selenium-standalone install",
     "test:e2e": "nightwatch -c nightwatch.config.js",
-    "posttest:e2e":"node ./reports/CucumberHtmlReporter/Index.js"
+    "posttest:e2e": "node ./reports/CucumberHtmlReporter/Index.js",
+    "test:contract": "mocha --timeout 10000 ./contract/ContractTest.js"
   },
   "author": "Rathin",
   "license": "MIT",
@@ -18,7 +19,12 @@
     "chromedriver": "^2.37.0",
     "cucumber": "^4.0.0",
     "cucumber-pretty": "^1.4.1",
+    "jasmine-core": "^3.1.0",
+    "jasmine-node": "^1.14.5",
     "jquery": "3.0.0",
+    "karma": "^2.0.0",
+    "karma-jasmine": "^1.1.1",
+    "karma-mocha": "^1.3.0",
     "react": "15.0.2",
     "react-dom": "15.0.2",
     "react-redux": "4.4.5",
@@ -30,6 +36,7 @@
     "toastr": "2.1.2"
   },
   "devDependencies": {
+    "@pact-foundation/pact": "^5.8.0",
     "babel-cli": "6.8.0",
     "babel-core": "6.8.0",
     "babel-loader": "6.2.4",
@@ -58,7 +65,7 @@
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "0.8.5",
     "jsdom": "8.5.0",
-    "mocha": "^2.4.5",
+    "mocha": "^2.5.3",
     "nightwatch": "^0.9.20",
     "nightwatch-cucumber": "^9.1.2",
     "nock": "8.0.0",
